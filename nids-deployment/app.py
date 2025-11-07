@@ -233,8 +233,8 @@ with tab2:
                     min_value=0.0,
                     format="%.6f"
                 )
-        
-        submit_button = st.form_submit_.button("Classify Manual Input", type="primary")
+        submit_button = st.form_submit_button("Classify Manual Input", type="primary")
+
 
     if submit_button:
         # Convert dict to DataFrame, ensuring correct column order
@@ -258,3 +258,4 @@ with tab2:
 
         st.subheader("Data You Submitted:")
         st.dataframe(input_df, use_container_width=True)
+
